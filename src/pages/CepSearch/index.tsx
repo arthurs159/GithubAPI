@@ -1,6 +1,6 @@
 import './styles.css';
 
-import ResultCard from 'components/ResultCard';
+import HomeCard from 'components/HomeCard';
 
 const CepSearch = () => {
   return (

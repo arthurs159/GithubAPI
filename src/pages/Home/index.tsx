@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
+import ResultCard from 'components/HomeCard';
 
 import './styles.css';
 
 const Home = () => {
     return (
-        <div className="home-container">
-        </div>
+        <ResultCard />
     );
 }
 
