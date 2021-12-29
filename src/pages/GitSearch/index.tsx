@@ -1,3 +1,4 @@
+import ResultCard from 'components/ResultCard';
 import './styles.css';
 
 const GitSearch = () => {
@@ -19,7 +20,11 @@ const GitSearch = () => {
         </button>
       </form>
       </div>
+      <div className="information-container">
+      <ResultCard perfil={'https://api.github.com/users/acenelio'} seguidores={4379} localidade={'Uberlância'} nome={'Nelio Alves'} foto={'https://avatars.githubusercontent.com/u/13897257?v=4'} />
+      </div>
     </div>
+    
   );
 };
 
