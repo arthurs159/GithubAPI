@@ -1,7 +1,11 @@
 import './styles.css';
 
 const Button = () => {
-       return (
-              <h1></h1>
-       );
+  return (
+    <button type="button" className="btn btn-primary">
+      <h4>Começar</h4>
+    </button>
+  );
 };
+
+export default Button;
