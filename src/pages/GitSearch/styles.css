@@ -1,5 +1,29 @@
 .git-search-container {
-       border: 1px solid red;
-       margin: 54px 95px 0 95px;
-       background-color: #E6F7FF;
+  margin: 54px 95px 0 95px;
+  background-color: #e6f7ff;
+  height: 270px;
+  border-radius: 16px;
+}
+
+.content-container {
+  padding: 54px 0 54px 31px;
+}
+
+.form-container {
+  padding: 12px 0 24px 0;
+}
+
+.text-container-page {
+  color: #262626;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.search-button h4 {
+  font-size: 16px;
+  color: white;
+}
+
+.form-container input{
+       padding-left: 17px;
 }

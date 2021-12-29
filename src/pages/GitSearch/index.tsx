@@ -3,7 +3,8 @@ import './styles.css';
 const GitSearch = () => {
   return (
     <div className="git-search-container">
-      <h1 className="text-container">Encontre um perfil Github</h1>
+      <div className="content-container">
+      <h1 className="text-container-page">Encontre um perfil Github</h1>
       <form>
         <div className="form-container">
           <input
@@ -14,9 +15,10 @@ const GitSearch = () => {
           />
         </div>
         <button type="submit" className="btn btn-primary search-button">
-          Encontrar
+          <h4>Encontrar</h4>
         </button>
       </form>
+      </div>
     </div>
   );
 };
