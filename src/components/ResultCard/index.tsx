@@ -17,7 +17,7 @@ const ResultCard = ({ foto, perfil, seguidores, localidade, nome }: Props) => {
       <div className="info-container">
         <h1>Informações</h1>
         <div className="card-perfil">
-          <h4>Perfil: {perfil}</h4>
+          <h4>Perfil: <a href={perfil}>{perfil}</a></h4>
         </div>
         <div className="card-perfil">
           <h4>Seguidores: {seguidores}</h4>

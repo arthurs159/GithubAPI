@@ -6,7 +6,7 @@ const GitSearch = () => {
     <div className="git-search-container">
       <div className="content-container">
       <h1 className="text-container-page">Encontre um perfil Github</h1>
-      <form>
+      <form onSubmit={}>
         <div className="form-container">
           <input
             type="text"
