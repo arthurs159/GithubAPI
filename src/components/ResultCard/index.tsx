@@ -1,32 +1,32 @@
 import './styles.css';
 
 type Props = {
-  foto: string;
-  perfil: string;
-  seguidores: number;
-  localidade: string;
-  nome: string;
+  avatar_url: string;
+  html_url: string;
+  followers: number;
+  location: string;
+  name: string;
 };
 
-const ResultCard = ({ foto, perfil, seguidores, localidade, nome }: Props) => {
+const ResultCard = ({ avatar_url, html_url, followers, location, name }: Props) => {
   return (
     <div className="result-container">
       <div className="img-container">
-        <img src={foto} alt="foto" />
+        <img src={avatar_url} alt="fotoDoPerfil" />
       </div>
       <div className="info-container">
         <h1>Informações</h1>
         <div className="card-perfil">
-          <h4>Perfil: <a href={perfil}>{perfil}</a></h4>
+          <h4>Perfil: <a href={html_url}>{html_url}</a></h4>
         </div>
         <div className="card-perfil">
-          <h4>Seguidores: {seguidores}</h4>
+          <h4>Seguidores: {followers}</h4>
         </div>
         <div className="card-perfil">
-          <h4>Localidade: {localidade}</h4>
+          <h4>Localidade: {location}</h4>
         </div>
         <div className="card-perfil">
-          <h4>Nome: {nome}</h4>
+          <h4>Nome: {name}</h4>
         </div>
       </div>
     </div>
