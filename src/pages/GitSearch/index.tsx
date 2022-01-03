@@ -1,16 +1,30 @@
 import ResultCard from 'components/ResultCard';
+import { useState } from 'react';
 import './styles.css';
+
+type FormData = {
+  user: string;
+  test: string;
+}
 
 const GitSearch = () => {
 
+  const [formData, setFormData] = useState<FormData>({
+    user: '',
+    test: ''
+  });
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log("Mudou para: " + event.target.value);
+    const name = event.target.name;
+    const value = event.target.value;
+
+    setFormData( { ...formData, [name]:value } )
+
   }
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("Clicou no botão");
-    
+    console.log(formData);
   }
 
 
@@ -22,10 +36,22 @@ const GitSearch = () => {
         <div className="form-container">
           <input
             type="text"
+            name="user"
+            value={formData.user}
             className="search-input"
             placeholder="Usuário Github"
             onChange={(handleChange)}
           />
+
+          <input
+            type="text"
+            name="test"
+            value={formData.test}
+            className="search-input"
+            placeholder="Usuário Github"
+            onChange={(handleChange)}
+          />
+
         </div>
         <button type="submit" className="btn btn-primary search-button">
           <h4>Encontrar</h4>
