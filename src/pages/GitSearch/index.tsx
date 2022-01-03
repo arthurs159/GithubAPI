@@ -59,6 +59,7 @@ const GitSearch = () => {
               onChange={handleChange}
             />
           </div>
+          
           <button type="submit" className="btn btn-primary search-button">
             <h4>Encontrar</h4>
           </button>

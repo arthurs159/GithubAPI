@@ -1,4 +1,5 @@
 import Button from 'components/Button';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
@@ -9,9 +10,11 @@ const Home = () => {
         <h4>Bootcamp Spring React - DevSuperior
         </h4>
   
+        <Link to="/git">
         <div className="button-container">
           <Button />
         </div>
+        </Link>
   
       </div>
     );

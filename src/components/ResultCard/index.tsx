@@ -17,16 +17,20 @@ const ResultCard = ({ avatar_url, html_url, followers, location, name }: Props) 
       <div className="info-container">
         <h1>Informações</h1>
         <div className="card-perfil">
-          <h4>Perfil: <a href={html_url}>{html_url}</a></h4>
+          <h4>Perfil: </h4>
+          <a href={html_url}>{html_url}</a>
         </div>
         <div className="card-perfil">
-          <h4>Seguidores: {followers}</h4>
+          <h4>Seguidores: </h4>
+          <p>{followers}</p>
         </div>
         <div className="card-perfil">
-          <h4>Localidade: {location}</h4>
+          <h4>Localidade: </h4>
+          <p>{location}</p>
         </div>
         <div className="card-perfil">
-          <h4>Nome: {name}</h4>
+          <h4>Nome:</h4>
+          <p>{name}</p>
         </div>
       </div>
     </div>
