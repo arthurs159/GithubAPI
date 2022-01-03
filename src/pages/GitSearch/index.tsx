@@ -2,17 +2,29 @@ import ResultCard from 'components/ResultCard';
 import './styles.css';
 
 const GitSearch = () => {
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("Mudou para: " + event.target.value);
+  }
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log("Clicou no botão");
+    
+  }
+
+
   return (
     <div className="git-search-container">
       <div className="content-container">
       <h1 className="text-container-page">Encontre um perfil Github</h1>
-      <form onSubmit={}>
+      <form onSubmit={handleSubmit}>
         <div className="form-container">
           <input
             type="text"
             className="search-input"
             placeholder="Usuário Github"
-            onChange={() => {}}
+            onChange={(handleChange)}
           />
         </div>
         <button type="submit" className="btn btn-primary search-button">
