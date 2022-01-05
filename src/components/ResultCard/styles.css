@@ -86,5 +86,13 @@ p{
   .card-perfil a {
     font-size: 12px;
   }
+
+  .info-container {
+    margin: 0;
+  }
+
+  .result-container {
+    padding: 5px;
+  }
 }
 

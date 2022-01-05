@@ -1,5 +1,6 @@
 .text-container {
        padding-left: 41px;
+       padding: 0 40px 5px 40px;
 }
 
 .text-container h1 {
