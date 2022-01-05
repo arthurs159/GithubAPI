@@ -60,3 +60,31 @@ p{
   margin-bottom: 0;
 }
 
+@media (max-width: 715px) {
+  .result-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-container img {
+    width: 200px;
+    padding: 25px 0 25px 0;
+  }
+
+  .result-container {
+    height: 100%;
+    padding-right: 38px;
+    padding-bottom: 25px;
+  }
+
+  .info-container {
+    height: 247px;
+  }
+}
+
+@media (max-width: 455px) {
+  .card-perfil a {
+    font-size: 15px;
+  }
+}
+

@@ -31,3 +31,25 @@
 .information-container {
   margin-top: 60px;
 }
+
+@media (max-width: 820px) {
+  .git-search-container {
+    margin: 25px;
+  }
+  
+  .text-container-page{
+    font-size: 30px;
+    text-align: left;
+    
+  }
+
+  .content-container {
+    padding: 54px 31px 54px 31px;
+  }
+}
+
+@media (max-width: 715px) {
+  .information-container {
+    margin-top: 30px;
+  }
+}
